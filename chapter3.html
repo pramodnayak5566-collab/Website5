@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 3 - Fibre to Fabric</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0fdf4;
+        }
+
+        header {
+            background: #065f46;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #065f46;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px 12px;
+            background: #065f46;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #065f46;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function checkQuiz() {
+            let score = 0;
+
+            if (document.getElementById("q1b").checked) score++;
+            if (document.getElementById("q2a").checked) score++;
+            if (document.getElementById("q3c").checked) score++;
+
+            document.getElementById("result").innerHTML =
+                "Your Score: " + score + "/3";
+        }
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 3</h1>
+    <h2>Fibre to Fabric</h2>
+</header>
+
+<div class="container">
+
+<a href="index.html">⬅ Back to Home</a>
+
+<div class="card">
+<h2>📘 Notes</h2>
+
+<p><b>Fibre:</b> Thin thread-like structure obtained from plants or animals.</p>
+
+<p><b>Types of Fibres:</b></p>
+<ul>
+<li>Natural Fibre (Cotton, Wool)</li>
+<li>Synthetic Fibre (Nylon, Polyester)</li>
+</ul>
+
+<p><b>Cotton:</b> Obtained from cotton plant.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/CottonPlant.JPG" alt="Cotton Plant">
+
+<p><b>Wool:</b> Obtained from sheep hair.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Sheep_in_field.jpg" alt="Sheep">
+
+<p><b>Process of Making Fabric:</b></p>
+<ul>
+<li>Ginning</li>
+<li>Spinning</li>
+<li>Weaving</li>
+<li>Knitting</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>📝 Short Questions</h2>
+
+<p>1. What is fibre?<br><b>Answer:</b> Thin thread-like structure.</p>
+
+<p>2. Name two natural fibres.<br><b>Answer:</b> Cotton and Wool.</p>
+
+<p>3. What is spinning?<br><b>Answer:</b> Making yarn from fibres.</p>
+
+</div>
+
+<div class="card">
+<h2>📕 Long Question</h2>
+
+<p><b>Explain process of making fabric.</b><br>
+Cotton is separated by ginning, spun into yarn, then woven or knitted to make fabric.</p>
+
+</div>
+
+<div class="card">
+<h2>🎯 Quiz (Auto Scoring)</h2>
+
+<p>1. Cotton is obtained from:</p>
+<input type="radio" name="q1" id="q1a"> a) Sheep<br>
+<input type="radio" name="q1" id="q1b"> b) Plant<br>
+<input type="radio" name="q1" id="q1c"> c) Factory<br>
+
+<p>2. Wool comes from:</p>
+<input type="radio" name="q2" id="q2a"> a) Sheep<br>
+<input type="radio" name="q2" id="q2b"> b) Tree<br>
+<input type="radio" name="q2" id="q2c"> c) Water<br>
+
+<p>3. Spinning makes:</p>
+<input type="radio" name="q3" id="q3a"> a) Cloth<br>
+<input type="radio" name="q3" id="q3b"> b) Dye<br>
+<input type="radio" name="q3" id="q3c"> c) Yarn<br>
+
+<button onclick="checkQuiz()">Submit Quiz</button>
+
+<p id="result"></p>
+
+</div>
+
+</div>
+
+<footer>
+<p>Class 7 Science | Chapter 3 with Images & Quiz</p>
+</footer>
+
+</body>
+</html>
